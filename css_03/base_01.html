@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    div.MenuLevel1 {display: flex; width: 600px }
+    div.MenuLevel1 > div {text-align: center; padding: 2px; width: 100%; background-color: rgb(157, 157, 126); border: solid blue 1px; position: relative; cursor: pointer }
+    div.MenuLevel2 {top: 100%; width: 150px; display: none}
+    /* неполучается воровнять выподающее меню по середине */
+    div.MenuLevel2 > div {  background-color: rgb(184, 195, 195); border: solid blue 1px; cursor: pointer}
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 90%; z-index: 1 }
+    @media screen and (max-width: 610px) {
+            div.MenuLevel1 {
+                display: block;
+                width: 100px;
+            }
+    }
+</style>
+</head>
+<body>
+  
+
+<div class='MenuLevel1'> 
+    <div>Понедельник
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>
+        Вторник
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>
+        Среда
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Четверг
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Пятница
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+    <div>Суббота
+        <div class='MenuLevel2'>
+            <div>Завтрак</div>
+            <div>Обед</div>
+            <div>Ужин</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
